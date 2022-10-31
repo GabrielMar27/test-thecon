@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+#mainContainer {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  margin: 20px;
+}
+#mySkills,
+#mySkillsInfo {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  align-items: center;
+}
+#mySkillsInfo {
+  width: 75%;
+  border-left: 1px grey solid;
+  border-right: 1px grey solid;
+}
+#myName {
+  padding-top: 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+#myOcupation {
+  padding: 5px;
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+#name {
+  font-weight: 600;
+}
+#myAboutMe {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+}
+#photoMe {
+  border: 10px solid rgb(94, 94, 232);
+  border-radius: 50%;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+li {
+  list-style: none;
+  padding-top: 20px;
+}
+.location > #emailIcon:before {
+  background-color: rgb(94, 94, 232);
+  border: 0px;
+  border-radius: 50%;
+  padding: 5px;
+  content: url(/media/svgs/mail.svg);
+}
+#emailIcon {
+  margin-right: 20%;
+}
+.location > #addressIcon:before {
+  background-color: rgb(94, 94, 232);
+  border: 0px;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 20%;
+  content: url(/media/svgs/home.svg);
+}
+#addressIcon {
+  margin-right: 20%;
+}
+.location {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.location > #phoneIcon:before {
+  background-color: rgb(94, 94, 232);
+  border: 0px;
+  border-radius: 70%;
+  padding: 5px;
+  margin-right: 20%;
+  content: url(/media/svgs/phone-call.svg);
+}
+#phoneIcon {
+  margin-right: 20%;
+}
+.header {
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+}
+.header > #languageIcon:before {
+  background-color: rgb(94, 94, 232);
+  border: 0px;
+  border-radius: 50%;
+  padding: 5px;
+  content: url(/media/svgs/globe.svg);
+}
+#languageIcon {
+  margin-right: 20%;
+}
+.header > #skillsIcon:before {
+  background-color: rgb(94, 94, 232);
+  border: 0px;
+  border-radius: 50%;
+  padding: 5px;
+  content: url(/media/svgs/cog.svg);
+}
+#skillsIcon {
+  margin-right: 20%;
+}
+#skills {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 50px;
+}
+.skillMetter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+progress {
+  -webkit-appearance: none;
+  height: 15px;
+  margin-left: 50px;
+}
+progress::-webkit-progress-bar {
+  border: 2px rgb(94, 94, 232) solid;
+  border-radius: 50px;
+  background-color: white;
+}
+progress::-webkit-progress-value {
+  background-color: rgb(94, 94, 232);
+  border-radius: 3px;
+}
+
+.prog {
+  display: flex;
+  justify-content: space-between;
+}
+.resume .resume_right .resume_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #0bb5f4;
+  border-radius: 50%;
+  position: relative;
+  color: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul li i {
+  font-size: 30px;
+}
+
+.resume .resume_right .resume_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: #0bb5f4;
+}
+#myAboutMe {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.header > #titleIcon {
+  background-color: rgb(94, 94, 232);
+  border: 0px;
+  border-radius: 50%;
+  padding: 5px;
+  content: url(/media/svgs/pen.svg);
+}
+.header > #educationIcon {
+  background-color: rgb(94, 94, 232);
+  border: 0px;
+  border-radius: 50%;
+  padding: 5px;
+  content: url(/media/svgs/book.svg);
+}
+.header > #experienceIcon {
+  background-color: rgb(94, 94, 232);
+  border: 0px;
+  border-radius: 50%;
+  padding: 5px;
+  content: url(/media/svgs/suitcase.svg);
+}
+#storyAboutMe {
+  margin-top: 20px;
+}
+@media screen and (max-width: 1070px) {
+  .prog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #mySkillsInfo {
+    width: 100%;
+  }
+  #myAboutMeInfo {
+    width: 100%;
+  }
+  #mainContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
